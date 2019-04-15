@@ -17,7 +17,7 @@ name = "citybound"
 path = "./cb_server/main.rs"
 
 [dependencies]
-rouille = {version = "2.1.0", default-features = false}
+rouille = {version = "3.0.0", default-features = false}
 clap = "2.32.0"
 open = "1.2.2"
 backtrace = "0.3"
