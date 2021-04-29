@@ -1,0 +1,32 @@
+version: 2
+updates:
+- package-ecosystem: cargo
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: backtrace
+    versions:
+    - 0.3.56
+    - 0.3.57
+  - dependency-name: serde_derive
+    versions:
+    - 1.0.123
+    - 1.0.124
+  - dependency-name: serde
+    versions:
+    - 1.0.123
+    - 1.0.124
+  - dependency-name: ordered-float
+    versions:
+    - 2.0.1
+    - 2.1.0
+  - dependency-name: rouille
+    versions:
+    - 3.0.0
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
